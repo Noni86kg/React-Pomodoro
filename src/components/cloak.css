@@ -1,0 +1,63 @@
+main {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--black) 0%, var(--black) 15%, rgb(42, 46, 85) 100%);
+    box-shadow: -30px -30px 90px -30px rgb(42 46 85);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.central {
+    width: 366px;
+    height: 366px;
+    border-radius: 50%;
+    background: var(--black);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CircularProgressbar {
+    width: 96%;
+
+}
+.CircularProgressbar-trail {
+    stroke-width:0;
+}
+.CircularProgressbar-path {
+    stroke-width:4;
+}
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: var(--bgcolor) !important;
+}
+.display-time {
+    position: absolute;
+    z-index: 15;
+    text-align: center;
+}
+.btn-start {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.btn-start:hover  {
+    color: var(--bgcolor);
+}
+@media (max-width: 767px) {
+    main {
+        transform: scale(.75);
+    }
+}
+@media (max-width: 335px) {
+    main {
+        transform: scale(.6);
+    }
+}
